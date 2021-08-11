@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <windows.h>
+#include <iostream>
+#include <locale.h>
+using namespace std;
+
+int main ()
+{
+	setlocale(LC_ALL, "spanish");
+	system ("color 02");
+	string nombre, apellido;
+	int telefono, A_Financiar;
+	float Pvehiculo, interes = 0.15, Ivehiculo, Total_pagar;
+
+	cout<<"Ingrese el nombre del usuario:"<<endl;
+	cin>>nombre;
+	cout<<"Ingrese el apellido del usuario:"<<endl;
+	cin>>apellido;
+	cout<<"Ingrese el número de teléfono:"<<endl;
+	cin>>telefono;
+	cout<<"Ingrese el precio del vehículo:"<<endl;
+	cin>>Pvehiculo;
+	cout<<"Ingrese el año a financiar:"<<endl;
+	cin>>A_Financiar;
+
+	
+	Ivehiculo = Pvehiculo*interes;
+	Total_pagar = Ivehiculo+Pvehiculo;
+
+	cout<<"_______________________________________________________________________________________________________\n"<<endl;
+	cout<<"\t----------------------------------------Venta vehículos---------------------------------------\n"<<endl;
+	cout<<"Nombre:"<<nombre<<endl;
+	cout<<"Apellido:"<<apellido<<endl;
+	cout<<"\n"<<endl;
+	cout<<"Interés en el periodo de tiempo\t\t                    Total a pagar\t\t"<<"\n"<<endl;
+	cout<<Ivehiculo<<"\t\t\t"<<Total_pagar<<"\t\t\t\t\t\t\t"<<endl;
+	return 0;
+}

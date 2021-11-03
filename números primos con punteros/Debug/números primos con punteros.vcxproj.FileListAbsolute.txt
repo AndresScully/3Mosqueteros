@@ -1,0 +1,1 @@
+C:\Users\johaa\Desktop\Johann\Programación\Proyectos c++\Identificar números primos con punteros c++\números primos con punteros\Debug\números primos con punteros.exe
